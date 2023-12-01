@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-counter-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Classy drop shadow */
+  background-color: #f9f9f9; /* Background color */
 }
 
-.App-link {
-  color: #61dafb;
+.image-counter-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Classy drop shadow */
+  transform: scale(1.02); /* Slight scale up on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.image-counter-image {
+  width: 400;
+  cursor: pointer;
+}
+
+.image-counter-count {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.reset-button {
+  background-color: #1f8dd6; /* Coastal blue/green background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Fun animation transition */
+
+  /* Fun animation on hover */
+  &:hover {
+    background-color: #13577e; /* Darker shade on hover */
   }
 }
